@@ -1,0 +1,30 @@
+<html style="font-size:16px;">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no,width=device-width, viewport-fit=cover">
+
+<style type="text/css">
+h1 {
+    font-size:4rem;
+    font-weight:normal;
+}
+.img_w {
+    width: 5rem;
+    display:block
+}
+</style>
+<script>
+//得到屏幕的宽
+var w_win = document.documentElement.clientWidth || document.body.clientWidth;
+console.log(w_win)
+
+//得到html元素
+var _html = document.getElementsByTagName('html')[0];
+console.log(_html[0])
+
+//设置根元素字体的大小
+_html.style.fontSize = w_win/20 + 'px';
+</script>
+<div>
+    <h1>移动端适配演示</h1>
+    <img class="img_w" src="src/assets/logo.png" />
+</div>
+</html>
